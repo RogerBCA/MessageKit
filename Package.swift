@@ -10,6 +10,12 @@ let package = Package(
             name: "MessageKit",
             targets: ["MessageKit"])
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/RogerBCA/InputBarAccessoryView",
+            .branch("master")
+        )
+    ],
     targets: [
         .target(
             name: "MessageKit",
